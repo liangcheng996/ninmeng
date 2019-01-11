@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/libs/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" href="./css/mui.picker.css">
+    <link rel="stylesheet" href="./css/mui.poppicker.css">
+    <link rel="stylesheet" href="./css/mui.dtpicker.css">
+    <script type="text/javascript" charset="utf-8">
+        mui.init();
+    </script>
+</head>
+
+<body>
+    <!-- 主界面不动、菜单移动 -->
+    <!-- 侧滑导航根容器 -->
+    <div class="mui-off-canvas-wrap mui-draggable mui-slide-in">
+        <!-- 菜单容器 -->
+        <aside class="mui-off-canvas-left" id="offCanvasSide">
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <!-- 菜单具体展示内容 -->
+                    <div class="PItype">
+                        <h3>收支类型</h3>
+                        <p class="PItype-parent">
+                            <span class="pay-btn">全部支出</span>
+                            <span class="income-btn">全部收入</span>
+                            <span class="else">全部其他</span>
+                        </p>
+
+                    </div>
+                    <div class="PIdetail">
+                        <h3>收支分类</h3>
+                        <p class="pay">
+                            <span>餐饮</span>
+                            <span>购物</span>
+                            <span>水果</span>
+                            <span>饮料</span>
+                        </p>
+                        <p class="income">
+                            <span>薪资</span>
+                            <span>奖金</span>
+                            <span>意外所得</span>
+                        </p>
+                    </div>
+                    <div class="quan">
+                        <h3>圈子</h3>
+                        <p class="else-list">
+                            <span>个人账单</span>
+                            <span>寝室</span>
+                            <span>共享</span>
+                        </p>
+                    </div>
+                    <div class="btnEnd">
+                        <span class="clear">重置</span>
+                        <span class="ok">确定</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <!-- 主页面容器 -->
+        <div class="mui-inner-wrap">
+            <!-- 主页面标题 -->
+            <header class="mui-bar mui-bar-nav">
+                <div class="mui-bar-nav-top">
+                    <div class="header-top">
+                        <img src="img/header-top.jpg" alt="">
+                        <p>柠檬记账</p>
+                        <img src="img/header-right.jpg" alt="">
+                    </div>
+                    <div class="header-circle">
+                        <div class="header-circle-left">
+                            <p>本月支出（元）</p>
+                            <span>55646.00</span>
+                        </div>
+                        <div class="header-circle-right">
+                            <span class="nianBtn">月</span><span class="timeBtn">2019-01-09</span>
+                        </div>
+
+                    </div>
+                    <div class="header-buttom">
+                        <p>
+                            <span>本月收入</span>
+                            <span>9889.00</span>
+                        </p>
+                        <p><span>本月结余</span><span>-3423.00</span></p>
+                    </div>
+                </div>
+                <div class="main">
+                    <div class="title">
+                        <img src="img/title-left.jpg" alt="">
+                        <p class="title-p"><span class="title-span">账单</span><span>图表</span></p>
+                        <img src="img/title-right.jpg" alt="">
+                    </div>
+                    <div class="mui-scroll-wrapper">
+                        <div class="mui-scroll">
+                            <div class="years">
+                                <div class="detail">
+                                    <ul class="mui-table-view">
+                                        <li class="mui-table-view-cell mui-collapse">
+                                            <a class="mui-navigate-right" href="#">
+                                                <p><img src="img/title-date.jpg" alt=""><span>10月</span></p>
+                                                <p class="mui-navigate-right-pay"><span>花费</span><span>8125.00</span></p>
+                                                <p class="mui-navigate-right-income"><span>收入</span><span>1111.00</span></p>
+                                                <p><span>结余</span><span>-7125.00</span></p>
+                                            </a>
+                                            <div class="mui-collapse-content">
+                                                <p>
+                                                    <ul id="OA_task_1" class="mui-table-view">
+                                                        <li class="mui-table-view-cell">
+                                                            <div class="mui-slider-right mui-disabled">
+                                                                <a class="mui-btn mui-btn-red">删除</a>
+                                                            </div>
+                                                            <div class="mui-slider-handle">
+                                                                <div>
+                                                                    <img src="img/content-icon.jpg" alt="">
+                                                                    <p>
+                                                                        <span>奖金</span>
+                                                                        <span>10月20日</span>
+                                                                    </p>
+                                                                </div>
+                                                                <div>1000.00</div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <ul id="OA_task_1" class="mui-table-view">
+                                                        <li class="mui-table-view-cell">
+                                                            <div class="mui-slider-right mui-disabled">
+                                                                <a class="mui-btn mui-btn-red">删除</a>
+                                                            </div>
+                                                            <div class="mui-slider-handle">
+                                                                <div>
+                                                                    <img src="img/content-icon.jpg" alt="">
+                                                                    <p>
+                                                                        <span>奖金</span>
+                                                                        <span>10月20日</span>
+                                                                    </p>
+                                                                </div>
+                                                                <div>1000.00</div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <ul id="OA_task_1" class="mui-table-view">
+                                                        <li class="mui-table-view-cell">
+                                                            <div class="mui-slider-right mui-disabled">
+                                                                <a class="mui-btn mui-btn-red">删除</a>
+                                                            </div>
+                                                            <div class="mui-slider-handle">
+                                                                <div>
+                                                                    <img src="img/content-icon.jpg" alt="">
+                                                                    <p>
+                                                                        <span>奖金</span>
+                                                                        <span>10月20日</span>
+                                                                    </p>
+                                                                </div>
+                                                                <div>1000.00</div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <ul id="OA_task_1" class="mui-table-view">
+                                                        <li class="mui-table-view-cell">
+                                                            <div class="mui-slider-right mui-disabled">
+                                                                <a class="mui-btn mui-btn-red">删除</a>
+                                                            </div>
+                                                            <div class="mui-slider-handle">
+                                                                <div>
+                                                                    <img src="img/content-icon.jpg" alt="">
+                                                                    <p>
+                                                                        <span>奖金</span>
+                                                                        <span>10月20日</span>
+                                                                    </p>
+                                                                </div>
+                                                                <div>1000.00</div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <ul id="OA_task_1" class="mui-table-view">
+                                                        <li class="mui-table-view-cell">
+                                                            <div class="mui-slider-right mui-disabled">
+                                                                <a class="mui-btn mui-btn-red">删除</a>
+                                                            </div>
+                                                            <div class="mui-slider-handle">
+                                                                <div>
+                                                                    <img src="img/content-icon.jpg" alt="">
+                                                                    <p>
+                                                                        <span>奖金</span>
+                                                                        <span>10月20日</span>
+                                                                    </p>
+                                                                </div>
+                                                                <div>1000.00</div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="months">
+                                <div class="detail">
+                                    <p><img src="img/title-date.jpg" alt="">01月07日</p>
+                                    <p>支出<span>55646.00</span></p>
+                                </div>
+
+                                <ul>
+                                    <li><img src="img/content-icon.jpg" alt=""><span>薪资</span></li>
+                                    <li>9665.00</li>
+                                </ul>
+                                <ul>
+                                    <li><img src="img/content-icon.jpg" alt=""><span>薪资</span></li>
+                                    <li>9665.00</li>
+                                </ul>
+                                <ul>
+                                    <li><img src="img/content-icon.jpg" alt=""><span>薪资</span></li>
+                                    <li>9665.00</li>
+                                </ul>
+                                <ul>
+                                    <li><img src="img/content-icon.jpg" alt=""><span>薪资</span></li>
+                                    <li>9665.00</li>
+                                </ul>
+                                <ul>
+                                    <li><img src="img/content-icon.jpg" alt=""><span>薪资</span></li>
+                                    <li>9665.00</li>
+                                </ul>
+                            </div>
+                            <div class="photos">
+                                图表
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </header>
+
+            <nav class="mui-bar mui-bar-tab">
+                <a class="mui-tab-item mui-active">
+                    <span class="mui-icon mui-icon-home"></span>
+                    <span class="mui-tab-label">首页</span>
+                </a>
+                <a class="mui-tab-item">
+                    <span class="mui-icon mui-icon-phone"></span>
+                    <span class="mui-tab-label">圈子</span>
+                </a>
+                <a class="mui-tab-item">
+                    <span class="mui-icon mui-icon-email"></span>
+                    <span class="mui-tab-label">发现</span>
+                </a>
+                <a class="mui-tab-item">
+                    <span class="mui-icon mui-icon-gear"></span>
+                    <span class="mui-tab-label">我的</span>
+                </a>
+            </nav>
+            <div class="mui-content mui-scroll-wrapper">
+                <div class="mui-scroll">
+
+
+                </div>
+            </div>
+            <div class="mui-off-canvas-backdrop"></div>
+        </div>
+    </div>
+    <!-- <script src="./js/libs/require.js" data-main="./js/page/index.js"></script> -->
+    <script src="./js/page/index.js"></script>
+    <script src="./js/libs/mui.picker.js"></script>
+    <script src="./js/libs/mui.poppicker.js"></script>
+    <script src="./js/libs/mui.dtpicker.js"></script>
+    <script src="./js/libs/better-scroll.js"></script>
+</body>
+
+</html>
